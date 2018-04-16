@@ -1,0 +1,43 @@
+color lila color rgba(78,41,99,0.9)
+
+
+fuente menu
+
+fuent Arial, Helvetica, sans-serif      
+mayuscula
+color #e5e5e5
+
+slider
+mismo color
+fuent Armata, Arial, Helvetica, sans-serif
+mayuscula
+
+
+cuerpo
+color rgb(36, 36, 36) negro
+fuent Arial, Helvetica, sans-serif
+color contraste rgba(31, 204, 196, 0.9)
+
+
+color de <a< #4e2963 resalte links
+
+
+
+
+
+
+
+
+
+
+color lila del otro
+#5A3D6E
+
+menu
+fuente "nexa_boldregular"
+
+fuente "nexa_lightregular"
+color rgb(91, 61, 111)
+
+body "open_sansregular";
+

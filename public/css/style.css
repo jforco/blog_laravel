@@ -1,0 +1,429 @@
+/*
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+*/
+
+
+/*GENERAL*/
+body{
+    /*background-color: #b3d9ff;*/
+    color: rgb(36, 36, 36);
+    font-family: 'Open Sans', sans-serif;
+}
+/*fuente para la tipografia que se aplica a titulos*/
+.titulos{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*color que se aplica a los divs o sections, acorde al color del tema*/
+.fondo{
+    background-color: rgb(78,41,99);
+}
+.fondonegro{
+    background-color: black;
+}
+
+/*color que se aplica al texto o elementos para que resalte, acorde al tema*/
+.colorPrincipal{
+    color: rgb(78,41,99);
+}
+.link{
+    color: white;
+}
+.link:hover{
+    color: #999;
+}
+.link2{
+    color: rgb(36, 36, 36);;
+}
+.link2:hover{
+    color: #999;
+    text-decoration: none;
+}
+
+@media(min-width: 768px){
+    .contenedor-central, .contenedor-central2{
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+}
+@media(max-width: 767.9px){
+    .contenedor-central{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contenedor-central2{
+        width: 100%;
+    }
+}
+.pagination>li{
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+
+
+
+/*AREA DE NAVEGACION*/
+
+/*tamaño de botones de enlace a redes sociales*/
+@media (min-width: 576px) {
+    .btn-circle{
+        border-radius: 50%;
+        width: 1.5em;
+        height: 1.45em;
+        margin: 0.1em;
+        font-size: 1.5em;
+    }
+    .icono-fb{
+        padding-left: 11px;
+    }
+    .icono-tw{
+        padding-left: 8px;
+    }
+    .icono-ln{
+        padding-left: 7px;
+    }
+    .icono-gg{
+        padding-left: 5px;
+    }
+}
+@media (max-width: 575.9px) {
+    .btn-circle{
+        border-radius: 50%;
+        width: 1.5em;
+        height: 1.45em;
+        margin: 0.0em;
+        font-size: 1em;
+    }
+    .icono-fb{
+        padding-left: 8px;
+    }
+    .icono-tw{
+        padding-left: 5px;
+    }
+    .icono-ln{
+        padding-left: 5px;
+    }
+    .icono-gg{
+        padding-left: 3px;
+    }
+}
+/*color de icono*/
+.icono{
+    color: white;
+    font-size: 1em;
+}
+/*tamaño de logo segun tamaño de pantalla*/
+@media (max-width: 575px) {
+    #img-logo{
+        width: auto;
+        height: 1.7em;
+        transition-property: width, height;
+        transition-duration: 0.5s;
+    }
+}
+@media (min-width: 576px) {
+    #img-logo{
+        width: auto;
+        height: 2.3em;
+        transition-property: width, height;
+        transition-duration: 0.5s;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+.navbar-brand{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#busqueda{
+    font-size: 0.8em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+/*para agregar el efecto de transparencia o cambio de color en el area de navegacion*/
+#navegacion{
+    background-color: rgba(0,0,0, 0.1);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    font-size: 0.8em;
+    padding: 0px;
+}
+/*corregir el error de altura que se crea en los elementos con submenus*/
+.submenu{
+    padding-top: 0.35em; 
+}
+/*color de los links principales de navegacion, y efecto hover*/
+.dropdown-toggle, .urlsolo{
+    color: #fff;
+    transition-property: border-bottom;
+    transition-duration: 0.3s;
+    border-bottom: 3px solid rgba(79, 191, 59, 0.0);
+}
+.dropdown-toggle:hover, .urlsolo:hover{
+    color: #fff;
+}
+@media(min-width: 576px){
+    .dropdown-toggle:hover, .urlsolo:hover{
+        transition-property: border-bottom;
+        transition-duration: 0.3s;
+        border-bottom: 3px solid #eee !important;
+    }
+}
+    
+/*color de los links de submenu de navegacion, y efecto hover*/
+.dropdown-item{
+    color: black;
+    transition-property: color, font-size;
+    transition-duration: 0.7s; 
+}
+.dropdown-item:hover{
+    color: black;
+    transition-property: color, font-size;
+    transition-duration: 0.5s;
+    /*font-size: 1.1em; */
+}
+/* mover los elemntos mas a la izquierda en dropmenu*/
+@media (max-width: 576px) {
+    .nav-item{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+    
+/*color del icono de menu, que aparece en pantallas chicas*/
+.menu-xs{
+    color: #fff;
+}
+/*separador de elementos del menu*/
+.separador{
+    padding-top: 0.1em;
+    font-size: 1.5em; 
+}
+
+
+
+
+
+
+
+
+/*IMAGEN PRINCIPAL*/
+#imagen-principal{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/moto2.jpg") !important;
+}
+#contenido-principal{
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+.menu-opcion{
+    color: inherit;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 1em;
+    border-top: 1px solid #CCC;
+    text-decoration: none !important;
+    font-size: 0.9em;
+}
+.menu-opcion-activo, .menu-opcion:hover{
+    color: rgb(78,41,99);
+    background-color: #eee;
+    font-weight: 600;
+}
+.menu-opcion-ultimo{
+    border-bottom: 1px solid #CCC;
+}
+
+
+/*SECCIONES EN EL MEDIO, CARDS*/
+.tituloPanel{
+    position: relative;
+    z-index: 1;
+    top: -12px !important;
+    background: rgba(31,204,196,0.79); 
+    text-decoration: none;
+    color: white;
+}
+.tituloPanel2{
+    position: relative;
+    z-index: 1;
+    top: -24px !important;
+    background: rgba(31,204,196,0.79); 
+    text-decoration: none;
+    color: white;
+}
+.pequeño{
+    font-size: 0.9em;
+}
+.pregunta, .btn-link{
+    text-decoration: none !important;
+}
+.boton{
+    background-color: rgb(78,41,99);
+    color: white;
+}
+
+
+
+/*SECCION CONSEJOS DE NEGOCIO*/
+.cuadro-guia1{
+    background-color: rgba(78,41,99, 0.5);
+}
+.cuadro-guia2{
+    background-color: rgba(78,41,99, 0.7);
+}
+.cuadro-guia3{
+    background-color: rgba(78,41,99, 0.85);
+}
+.cuadro-guia1:hover, .cuadro-guia2:hover, .cuadro-guia3:hover{
+    background-color: rgba(31,204,196,0.5) !important;
+}
+.pasos-guia{
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 0.5em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+}
+
+
+
+
+/*SECCION ACERCA DE*/
+.img-fondo1{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/t1.jpg") !important;
+}
+.img-fondo2{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/t2.jpg") !important;
+}
+.img-fondo3{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/t3.png") !important;
+}
+.img-fondo4{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/t4.jpg") !important;
+}
+.nav-link-bio{
+    display: block;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0.3em;
+    border-top: 4px solid #ddd;
+    color:rgb(36,36,36);
+    text-decoration: none !important;
+}
+.nav-link-bio.active,.nav-link-bio:hover{
+    border-top: 4px solid rgb(78,41,99);
+    color: rgb(78,41,99) !important;
+}
+
+/*SECCIONES NOTICIAS Y BLOG*/
+.seccion-titulo{
+    border-bottom: 2px solid rgb(78,41,99);
+}
+
+/*EFECTO PARALLAX 22222222 Y EL MEDIA QUERY PARA QUITARLO EN PANTALLAS CHICAS*/
+/*
+#imagen-parallax{
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/copacabana.jpg") !important;
+    min-height: 100px;
+}
+@media (max-width: 576px) {
+    #imagen-parallax{
+        background-attachment: scroll;
+    }
+}
+*/
+
+
+
+
+/*PAGINA MAESTRA DE SECCIONES SECUNDARIAS*/
+.fondo-imagen{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo-seccion{
+    background-color: rgba(78,41,99, 0.9);
+    border-top-left-radius: 5px;
+}
+
+
+/*AREA DE CONTACTO Y REDES SOCIALES*/
+
+#footer{
+    background: linear-gradient(to bottom right,#715382, #170c1d);
+}
+@media (min-width: 576px) {
+    #links-abajo{
+        position: relative;
+        z-index: 1;
+        top: -20px !important;
+    }
+}
+@media (max-width: 575.9px) {
+    #links-abajo{
+        position: relative;
+        z-index: 1;
+        top: -10px !important;
+    }
+}
+    
+
+.contenedor-footer{
+    padding-left: 1.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
